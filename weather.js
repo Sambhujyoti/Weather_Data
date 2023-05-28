@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 
 app.post("/", (req, res) => {
     const query = req.body.cityName;
-    const apiKey = "e0684202ad38403d9bf163240232903";
+    const apiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxx";
     const apiURL = "http://api.weatherapi.com/v1/current.json?key=" + apiKey + "&q=" + query + "&aqi=yes";
     http.get(apiURL, response => {
         response.on("data", d => {
